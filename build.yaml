@@ -1,48 +1,63 @@
 ---
----
 include:
-  # OP36
+
   - board: ergohaven
     shield: op36_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-
+  - board: ergohaven
+    shield: op36_left
+    keymap: op36_ruen
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: op36_left_ruen-ergohaven-zmk
   - board: ergohaven
     shield: op36_right
-
   - board: ergohaven
     shield: op36_qube qube dongle_screen
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: op36_qube-ergohaven-zmk
-
+  - board: ergohaven
+    shield: op36_qube qube dongle_screen
+    keymap: op36_ruen
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: op36_qube_ruen-ergohaven-zmk
   - board: ergohaven
     shield: op36_left_qube
 
-  # K03
   - board: ergohaven
     shield: k03_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-
+  - board: ergohaven
+    shield: k03_left
+    keymap: k03_ruen
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: k03_left_ruen-ergohaven-zmk
   - board: ergohaven
     shield: k03_right
-
   - board: ergohaven
     shield: k03_qube qube dongle_screen
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: k03_qube-ergohaven-zmk
-
+  - board: ergohaven
+    shield: k03_qube qube dongle_screen
+    keymap: k03_ruen
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: k03_qube_ruen-ergohaven-zmk
   - board: ergohaven
     shield: k03_left_qube
 
-  # TRACKBALL
   - board: ergohaven
     shield: trackball
     keymap: trackball_v3.1
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_KEYBOARD_NAME=\"EH TB v3.1\"
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_KEYBOARD_NAME=\"EH\ TB\ v3.1\"
     artifact-name: trackball_v3.1-ergohaven-zmk
 
   - board: ergohaven
